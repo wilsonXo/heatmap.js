@@ -3,19 +3,16 @@
   "version": "2.0.5",
   "description": "Dynamic JavaScript Heatmaps for the Web",
   "homepage": "https://www.patrick-wied.at/static/heatmapjs/",
-  "author": {
-    "name": "Patrick Wied",
-    "email": "heatmapjs@patrick-wied.at",
-    "url": "https://www.patrick-wied.at/"
-  },
+  "author": "Patrick Wied <heatmapjs@patrick-wied.at> (https://www.patrick-wied.at/)",
   "main": "build/heatmap.js",
   "devDependencies": {
-    "grunt": ">= 0.4.1",
     "coffee-script": ">= 1.6.3",
-    "grunt-contrib-uglify": ">= 0.2.0",
-    "grunt-contrib-concat": ">= 0.1.3",
-    "grunt-contrib-watch": "0.2.0rc7",
-    "grunt-contrib-jshint": ">= 0.3.0"
+    "grunt": "^1.3.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^3.0.0",
+    "grunt-contrib-uglify": "^5.0.0",
+    "grunt-contrib-watch": "^0.2.0",
+    "http-server": "^0.12.3"
   },
   "keywords": [
     "heatmap",
@@ -42,5 +39,23 @@
     "src/renderer.js",
     "src/util.js",
     "src/core.js"
-  ]
+  ],
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "test": "tests"
+  },
+  "dependencies": {},
+  "scripts": {
+    "dev": "npx grunt",
+    "server": "npx http-server -p 3001 -c -1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilsonXo/heatmap.js.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wilsonXo/heatmap.js/issues"
+  }
 }
